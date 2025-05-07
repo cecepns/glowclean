@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GlowClean</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body class="bg-blue-50 text-gray-800">
+  <!-- Header -->
+  <header class="px-4 lg:px-24 bg-blue-600 text-white py-4 flex justify-between items-center">
+    <img src="img/glowclean-logo.png" class="rounded-full w-16 h-auto" />
+
+    <div class="w-10 h-10 rounded-full bg-white overflow-hidden border-2 border-blue-200">
+      <img src="https://i.pravatar.cc/100" alt="Profile" class="object-cover w-full h-full">
+    </div>
+  </header>
+
+
+  <div class="mx-4 lg:mx-24 bg-white shadow-xl p-4 md:p-6 rounded-xl mt-8 mb-24">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Pilih Paket Layanan</h2>
+
+    <!-- Tab buttons -->
+    <div class="flex space-x-4 mb-6 nowrap overflow-x-auto">
+      <button class="tab-button px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 active"
+        data-tab="reguler">Reguler</button>
+      <button class="tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium hover:bg-gray-300"
+        data-tab="deep">Deep Clean</button>
+      <button class="tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium hover:bg-gray-300"
+        data-tab="premium">Premium</button>
+    </div>
+
+    <!-- Tab contents -->
+    <div id="reguler" class="tab-content">
+      <h3 class="text-lg font-semibold mb-2">Paket Reguler</h3>
+      <div class="space-y-6 w-full max-w-2xl">
+        <!-- Card 1 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/1.png" alt="Cleaning"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Mingguan/Bulanan</h3>
+            <p class="text-sm text-gray-600">Nikmati kenyamanan rumah yang selalu bersih dengan layanan pembersihan
+              mingguan/bulanan kami.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 950.000 - 2.500.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/2.png" alt="Sapu"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Debu, Menyapu dan Mengepel</h3>
+            <p class="text-sm text-gray-600">Tim kami akan membersihkan debu, menyapu, dan mengepel lantai Anda untuk
+              menciptakan lingkungan yang bersih dan segar.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 150.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/3.png" alt="Toilet"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Toilet dan Kamar Mandi</h3>
+            <p class="text-sm text-gray-600">Layanan kami meliputi pembersihan toilet, wastafel, shower, lantai,
+              dinding, dan cermin.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 100.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="deep" class="tab-content hidden">
+      <div class="space-y-6 w-full max-w-2xl">
+        <!-- Card 1 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/2.png" alt="Cleaning"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Mingguan/Bulanan</h3>
+            <p class="text-sm text-gray-600">Nikmati kenyamanan rumah yang selalu bersih dengan layanan pembersihan
+              mingguan/bulanan kami.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 950.000 - 2.500.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="premium" class="tab-content hidden">
+      <h3 class="text-lg font-semibold mb-2">Paket Premium</h3>
+      <div class="space-y-6 w-full max-w-2xl">
+        <!-- Card 1 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/2.png" alt="Cleaning"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Mingguan/Bulanan</h3>
+            <p class="text-sm text-gray-600">Nikmati kenyamanan rumah yang selalu bersih dengan layanan pembersihan
+              mingguan/bulanan kami.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 950.000 - 2.500.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/2.png" alt="Sapu"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Debu, Menyapu dan Mengepel</h3>
+            <p class="text-sm text-gray-600">Tim kami akan membersihkan debu, menyapu, dan mengepel lantai Anda untuk
+              menciptakan lingkungan yang bersih dan segar.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 150.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border border-blue-400 rounded-xl p-4 bg-white flex flex-wrap gap-3 items-start space-x-4 shadow-md">
+          <img src="img/service/3.png" alt="Toilet"
+            class="w-full h-34 md:w-24 md:h-24 rounded-lg object-cover">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-800">Pembersihan Toilet dan Kamar Mandi</h3>
+            <p class="text-sm text-gray-600">Layanan kami meliputi pembersihan toilet, wastafel, shower, lantai,
+              dinding, dan cermin.</p>
+            <p class="text-blue-600 font-semibold mt-2">Rp 100.000</p>
+            <div class="flex items-center space-x-2 mt-1">
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+            <button class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700">Get
+              Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer class="fixed bottom-0 inset-x-0 bg-white border-t shadow-md p-2 flex justify-around items-center">
+    <a href="index.html" class="text-gray-400 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M3 9.75L12 3l9 6.75M4.5 10.5v10.125h15V10.5" stroke-width="1.5" />
+      </svg>
+      Home
+    </a>
+    <a href="service.html" class="text-blue-600 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M5 21h14M10 3h4a2 2 0 012 2v14H8V5a2 2 0 012-2z" stroke-width="1.5" />
+      </svg>
+      Layanan
+    </a>
+    <a href="signin.html" class="text-gray-400 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M12 14.25a6 6 0 100-12 6 6 0 000 12zm0 2.25c-4 0-8 2-8 6v1.5h16V22.5c0-4-4-6-8-6z"
+          stroke-width="1.5" />
+      </svg>
+      Akun
+    </a>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active state from all buttons
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-blue-500', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-800');
+        });
+
+        // Hide all tab contents
+        contents.forEach(content => content.classList.add('hidden'));
+
+        // Activate clicked button and show related tab
+        const tab = button.getAttribute('data-tab');
+        document.getElementById(tab).classList.remove('hidden');
+        button.classList.add('bg-blue-500', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-800');
+      });
+    });
+  </script>
+</body>
+
+</html>
