@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GlowClean</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body class="bg-blue-50 text-gray-800">
+  <!-- Header -->
+  <header class="px-4 lg:px-24 bg-blue-600 text-white py-4 flex justify-between items-center">
+    <img src="img/glowclean-logo.png" class="rounded-full w-16 h-auto" />
+
+    <div class="w-10 h-10 rounded-full bg-white overflow-hidden border-2 border-blue-200">
+      <img src="https://i.pravatar.cc/100" alt="Profile" class="object-cover w-full h-full">
+    </div>
+  </header>
+
+
+  <div class="mx-4 lg:mx-24 bg-white shadow-xl p-4 md:p-6 rounded-xl mt-8 mb-24">
+    <!-- <h2 class="text-2xl font-bold text-blue-600 mb-6">Pilih Paket Layanan</h2> -->
+
+    <!-- Tab buttons -->
+    <div class="flex space-x-4 mb-6 nowrap overflow-x-auto pb-2">
+      <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 active"
+        data-tab="pesanan">Pesanan</button>
+      <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium"
+        data-tab="checkout-pesanan">Checkout Pesanan</button>
+      <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium"
+        data-tab="lacak-pesanan">lacak pesanan</button>
+    </div>
+
+    <!-- Tab contents -->
+    <div id="pesanan" class="tab-content">
+      <h3 class="text-lg font-semibold mb-2">Pesanan</h3>
+      <div class="md:max-w-2xl">
+        <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden">
+          <img src="img/service/1.png" alt="Piring" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
+            <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
+              dapur, lemari, dan lantai.</p>
+            <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
+            <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="text-md font-semibold mb-2">Pesanan Lainnya</h3>
+
+          <!-- Card -->
+          <div class="border border-blue-300 rounded-xl flex items-start p-3 mb-4 space-x-3">
+            <img src="img/service/2.png" alt="Cleaning" class="w-20 h-20 rounded-lg object-cover">
+            <div>
+              <h4 class="text-sm font-bold">Pembersihan Mingguan/Bulanan</h4>
+              <p class="text-xs text-gray-600">Nikmati kenyamanan rumah yang selalu bersih dengan layanan pembersihan
+                mingguan/bulanan kami.</p>
+              <p class="text-blue-700 text-sm font-semibold mt-1">Rp 950.000 - 2.500.000</p>
+              <div class="flex items-center justify-between mt-1">
+                <span class="text-yellow-400 text-sm">★★★★★</span>
+                <button class="ml-auto text-white text-xs bg-blue-700 px-2 py-1 rounded-full">Get Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="checkout-pesanan" class="tab-content hidden">
+      <h3 class="text-lg font-semibold mb-2">Checkout Pesanan</h3>
+      <div class="grid gap-5 md:grid-cols-2">
+        <div class="space-y-5">
+          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden">
+            <img src="img/service/1.png" alt="Piring" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
+              <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
+                dapur, lemari, dan lantai.</p>
+              <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
+              <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden">
+            <img src="img/service/1.png" alt="Piring" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
+              <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
+                dapur, lemari, dan lantai.</p>
+              <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
+              <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl shadow-md w-full h-fit">
+          <h2 class="text-blue-800 font-semibold text-lg mb-3">Rincian Pembayaran</h2>
+
+          <!-- Metode Pembayaran -->
+          <div class="flex justify-between items-center bg-gray-100 px-3 py-2 rounded-md cursor-pointer mb-4">
+            <span class="text-sm text-gray-700">Pilih Metode Pembayaran</span>
+            <span class="text-gray-500 text-xl">›</span>
+          </div>
+
+          <!-- Rincian Harga -->
+          <div class="text-sm space-y-1">
+            <div class="flex justify-between">
+              <span>Subtotal Jasa</span>
+              <span class="font-semibold">Rp 400.000</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Subtotal Diskon</span>
+              <span class="font-semibold">Rp 0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Delivery Fee</span>
+              <span class="font-semibold">Rp 20.000</span>
+            </div>
+            <div class="flex justify-between font-bold text-black mt-2 border-t pt-2 border-gray-200">
+              <span>Total Pembayaran</span>
+              <span>Rp 420.000</span>
+            </div>
+          </div>
+
+          <!-- Tombol -->
+          <button class="w-full bg-blue-100 text-black font-medium py-2 rounded-xl mt-4 hover:bg-blue-200">
+            Buy Now
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="lacak-pesanan" class="tab-content hidden">
+      <h3 class="text-lg font-semibold mb-2">Lacak pesanan</h3>
+      <div class="bg-white p-4 rounded-xl shadow-md w-full max-w-md space-y-4">
+
+        <!-- Judul -->
+        <h2 class="font-bold text-lg">Lacak Bestdy</h2>
+
+        <!-- Google Maps Embed -->
+        <div class="rounded-md overflow-hidden">
+          <iframe class="w-full h-48 rounded-md"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.718041535634!2d98.6615519!3d3.3264478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30313048b07e8cf3%3A0x64399d539ec66e9!2sTebing%20Tinggi%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1715171937036!5m2!1sen!2sid"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Status -->
+        <div class="bg-blue-100 text-sm text-gray-700 p-3 rounded-md">
+          Bestdy saat ini sedang berada di perjalanan dan akan sampai di lokasi anda dalam <strong>7 menit</strong> lagi
+        </div>
+
+        <!-- Progress Pesanan -->
+        <div>
+          <h2 class="font-bold text-lg mb-2">Progres Pesanan Anda</h2>
+          <ol class="relative border-l-4 border-blue-500 ml-4 space-y-6">
+            <li class="ml-4 relative">
+              <span class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[26px] top-1.5"></span>
+              <p class="font-semibold text-gray-800">Pesanan diterima</p>
+            </li>
+            <li class="ml-4 relative">
+              <span class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[26px] top-1.5"></span>
+              <p class="font-semibold text-gray-800">Pemrosesan pesanan</p>
+            </li>
+            <li class="ml-4 relative">
+              <span class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[26px] top-1.5"></span>
+              <p class="font-semibold text-gray-800">Pesanan disetujui</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer class="fixed bottom-0 inset-x-0 bg-white border-t shadow-md p-2 flex justify-around items-center">
+    <a href="index.html" class="text-gray-400 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M3 9.75L12 3l9 6.75M4.5 10.5v10.125h15V10.5" stroke-width="1.5" />
+      </svg>
+      Home
+    </a>
+    <a href="service.html" class="text-gray-400 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M5 21h14M10 3h4a2 2 0 012 2v14H8V5a2 2 0 012-2z" stroke-width="1.5" />
+      </svg>
+      Layanan
+    </a>
+    <a href="signin.html" class="text-blue-600 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path d="M12 14.25a6 6 0 100-12 6 6 0 000 12zm0 2.25c-4 0-8 2-8 6v1.5h16V22.5c0-4-4-6-8-6z"
+          stroke-width="1.5" />
+      </svg>
+      Akun
+    </a>
+    <a href="info.html" class="text-gray-400 flex flex-col items-center text-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" stroke-width="1.5" />
+      </svg>
+      Info
+    </a>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active state from all buttons
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-blue-500', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-800');
+        });
+
+        // Hide all tab contents
+        contents.forEach(content => content.classList.add('hidden'));
+
+        // Activate clicked button and show related tab
+        const tab = button.getAttribute('data-tab');
+        document.getElementById(tab).classList.remove('hidden');
+        button.classList.add('bg-blue-500', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-800');
+      });
+    });
+  </script>
+</body>
+
+</html>
