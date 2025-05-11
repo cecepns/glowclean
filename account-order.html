@@ -25,10 +25,11 @@
 
     <!-- Tab buttons -->
     <div class="flex space-x-4 mb-6 nowrap overflow-x-auto pb-2">
-      <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 active"
+      <button
+        class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 active"
         data-tab="pesanan">Pesanan</button>
       <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium"
-        data-tab="checkout-pesanan">Checkout Pesanan</button>
+        data-tab="keranjang">Keranjang</button>
       <button class="whitespace-nowrap tab-button px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-medium"
         data-tab="lacak-pesanan">lacak pesanan</button>
     </div>
@@ -43,7 +44,7 @@
             <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
             <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
               dapur, lemari, dan lantai.</p>
-            <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
+            <p class="text-blue-700 font-semibold mt-2">Rp 60.000</p>
             <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
           </div>
         </div>
@@ -55,13 +56,15 @@
           <div class="border border-blue-300 rounded-xl flex items-start p-3 mb-4 space-x-3">
             <img src="img/service/2.png" alt="Cleaning" class="w-20 h-20 rounded-lg object-cover">
             <div>
-              <h4 class="text-sm font-bold">Pembersihan Mingguan/Bulanan</h4>
+              <h4 class="text-sm font-bold">Pembersihan Mingguan</h4>
               <p class="text-xs text-gray-600">Nikmati kenyamanan rumah yang selalu bersih dengan layanan pembersihan
                 mingguan/bulanan kami.</p>
-              <p class="text-blue-700 text-sm font-semibold mt-1">Rp 950.000 - 2.500.000</p>
+              <p class="text-blue-700 text-sm font-semibold mt-1">Rp 370.000</p>
               <div class="flex items-center justify-between mt-1">
                 <span class="text-yellow-400 text-sm">★★★★★</span>
-                <button class="ml-auto text-white text-xs bg-blue-700 px-2 py-1 rounded-full">Get Now!</button>
+                <a href="account-order.html?option=keranjang"
+                  class="mt-2 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700 inline-block">Masukan
+                  Keranjang</a>
               </div>
             </div>
           </div>
@@ -69,46 +72,74 @@
       </div>
     </div>
 
-    <div id="checkout-pesanan" class="tab-content hidden">
-      <h3 class="text-lg font-semibold mb-2">Checkout Pesanan</h3>
+    <div id="keranjang" class="tab-content hidden">
+      <h3 class="text-lg font-semibold mb-2">Keranjang</h3>
       <div class="grid gap-5 md:grid-cols-2">
         <div class="space-y-5">
-          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden">
+          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden mb-4">
+            <img src="img/service/2.png" alt="Piring" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h2 class="text-lg font-bold">Pembersihan Debu, Menyapu dan Mengepel</h2>
+              <p class="text-sm mt-1">Tim kami akan membersihkan debu, menyapu, dan mengepel lantai Anda untuk
+                menciptakan lingkungan yang bersih dan segar.</p>
+              <p class="text-blue-700 font-semibold mt-2">Rp 60.000</p>
+              <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
+
+              <!-- Counter -->
+              <div class="flex items-center mt-4 space-x-2">
+                <button
+                  class="bg-gray-300 text-gray-700 rounded px-3 py-1 text-lg font-bold hover:bg-gray-400">−</button>
+                <input type="number" value="1" min="1"
+                  class="w-16 text-center border rounded-md p-0 py-1 text-gray-700" />
+                <button
+                  class="bg-gray-300 text-gray-700 rounded px-3 py-1 text-lg font-bold hover:bg-gray-400">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden mb-4">
             <img src="img/service/1.png" alt="Piring" class="w-full h-64 object-cover">
             <div class="p-4">
               <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
               <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
                 dapur, lemari, dan lantai.</p>
-              <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
+              <p class="text-blue-700 font-semibold mt-2">Rp 60.000</p>
               <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
+
+              <!-- Counter -->
+              <div class="flex items-center mt-4 space-x-2">
+                <button
+                  class="bg-gray-300 text-gray-700 rounded px-3 py-1 text-lg font-bold hover:bg-gray-400">−</button>
+                <input type="number" value="1" min="1"
+                  class="w-16 text-center border rounded-md p-0 py-1 text-gray-700" />
+                <button
+                  class="bg-gray-300 text-gray-700 rounded px-3 py-1 text-lg font-bold hover:bg-gray-400">+</button>
+              </div>
             </div>
           </div>
-          <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden">
-            <img src="img/service/1.png" alt="Piring" class="w-full h-64 object-cover">
-            <div class="p-4">
-              <h2 class="text-lg font-bold">Pembersihan Detail Dapur dan Kamar Mandi</h2>
-              <p class="text-sm mt-1">Layanan kami mencakup pembersihan komprehensif, termasuk membersihkan perlengkapan
-                dapur, lemari, dan lantai.</p>
-              <p class="text-blue-700 font-semibold mt-2">Rp 150.000</p>
-              <div class="text-yellow-400 mt-1 text-sm">★★★★★</div>
-            </div>
-          </div>
+
         </div>
 
         <div class="bg-white p-4 rounded-xl shadow-md w-full h-fit">
           <h2 class="text-blue-800 font-semibold text-lg mb-3">Rincian Pembayaran</h2>
 
           <!-- Metode Pembayaran -->
-          <div class="flex justify-between items-center bg-gray-100 px-3 py-2 rounded-md cursor-pointer mb-4">
-            <span class="text-sm text-gray-700">Pilih Metode Pembayaran</span>
-            <span class="text-gray-500 text-xl">›</span>
+          <div class="mb-4">
+            <label for="metode-pembayaran" class="block text-sm text-gray-700 mb-1">Pilih Metode Pembayaran</label>
+            <select id="metode-pembayaran" name="metode-pembayaran"
+              class="w-full bg-gray-100 text-gray-700 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="ovo">OVO</option>
+              <option value="gopay">GoPay</option>
+              <option value="dana">Dana</option>
+            </select>
           </div>
+
 
           <!-- Rincian Harga -->
           <div class="text-sm space-y-1">
             <div class="flex justify-between">
               <span>Subtotal Jasa</span>
-              <span class="font-semibold">Rp 400.000</span>
+              <span class="font-semibold">Rp 120.000</span>
             </div>
             <div class="flex justify-between">
               <span>Subtotal Diskon</span>
@@ -120,14 +151,15 @@
             </div>
             <div class="flex justify-between font-bold text-black mt-2 border-t pt-2 border-gray-200">
               <span>Total Pembayaran</span>
-              <span>Rp 420.000</span>
+              <span>Rp 140.000</span>
             </div>
           </div>
 
           <!-- Tombol -->
-          <button class="w-full bg-blue-100 text-black font-medium py-2 rounded-xl mt-4 hover:bg-blue-200">
+          <a href="account-order.html?option=lacak-pesanan"
+            class="block w-full bg-blue-100 text-black font-medium py-2 rounded-xl mt-4 hover:bg-blue-200 text-center">
             Buy Now
-          </button>
+          </a>
         </div>
 
 
@@ -201,7 +233,8 @@
       Akun
     </a>
     <a href="info.html" class="text-gray-400 flex flex-col items-center text-xs">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-0.5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
         <path d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" stroke-width="1.5" />
       </svg>
       Info
@@ -212,23 +245,39 @@
     const buttons = document.querySelectorAll('.tab-button');
     const contents = document.querySelectorAll('.tab-content');
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active state from all buttons
-        buttons.forEach(btn => {
+    // Fungsi untuk mengaktifkan tab berdasarkan nama
+    function activateTab(tabName) {
+      buttons.forEach(btn => {
+        const tab = btn.getAttribute('data-tab');
+        if (tab === tabName) {
+          btn.classList.add('bg-blue-500', 'text-white');
+          btn.classList.remove('bg-gray-200', 'text-gray-800');
+          document.getElementById(tab).classList.remove('hidden');
+        } else {
           btn.classList.remove('bg-blue-500', 'text-white');
           btn.classList.add('bg-gray-200', 'text-gray-800');
-        });
-
-        // Hide all tab contents
-        contents.forEach(content => content.classList.add('hidden'));
-
-        // Activate clicked button and show related tab
-        const tab = button.getAttribute('data-tab');
-        document.getElementById(tab).classList.remove('hidden');
-        button.classList.add('bg-blue-500', 'text-white');
-        button.classList.remove('bg-gray-200', 'text-gray-800');
+          document.getElementById(tab).classList.add('hidden');
+        }
       });
+    }
+
+    // Event listener untuk klik
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+        activateTab(tab);
+        // Update URL tanpa reload halaman
+        const url = new URL(window.location);
+        url.searchParams.set('service', tab);
+        window.history.pushState({}, '', url);
+      });
+    });
+
+    // Saat pertama kali halaman dimuat, cek URL
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const service = urlParams.get('option') || 'pesanan'; // default tab
+      activateTab(service);
     });
   </script>
 </body>
